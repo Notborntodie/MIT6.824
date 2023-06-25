@@ -33,14 +33,6 @@ rf.logs = append(rf.logs, newEntry) //append the new entry to the log
 rf.persist()                        //persist the log
 ```
 
-
-
-
-
-
-
-
-
 您可能需要将nextIndex的优化备份超过一个条目。查看从第7页底部和第8页顶部（由灰色线标记）开始的扩展Raft论文。论文对细节含糊不清；您需要填补空白。一种可能性是使拒绝消息包括：
 
 ```
